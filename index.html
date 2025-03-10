@@ -24,43 +24,49 @@
   />
 
 
-  <body class="min-h-screen bg-black flex flex-col items-center justify-center">
-    <!-- Centered content -->
+  <body class="min-h-screen flex flex-col items-center justify-center">
+    
+    <!-- Navigation Bar -->
+    <nav class="w-full bg-gray-900 text-white py-4">
+      <div class="max-w-4xl mx-auto flex justify-between items-center px-4">
+        <a href="https://youtube.com" class="text-xl font-bold text-white flex items-center">
+          <img src="https://placehold.co/300x100" alt="Logo" class="h-12 mr-4" />
+        </a>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="block lg:hidden">
+          <button id="hamburger-icon" class="text-white focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+
+        <!-- Menu for Desktop -->
+        <ul class="hidden lg:flex space-x-6">
+          <li><a href="#upcoming-events" class="hover:text-gray-400">Upcoming Events</a></li>
+          <li><a href="#past-events" class="hover:text-gray-400">Past Events</a></li>
+          <li><a href="#about" class="hover:text-gray-400">About</a></li>
+          <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu">
+      <a href="#upcoming-events-header">Upcoming Events</a>
+      <a href="#about">About</a>
+      <a href="#past-events-header">Past Events</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+
     <div class="bg-white w-full max-w-4xl mx-auto">
 
-      <!-- Navigation Bar -->
-      <nav class="w-full bg-black text-white py-4">
-        <div class="max-w-4xl mx-auto flex justify-between items-center px-4">
-          <a href="https://youtube.com" class="text-xl font-bold text-white flex items-center">
-            <img src="https://placehold.co/300x100" alt="Logo" class="h-12 mr-4" />
-          </a>
+      
 
-          <!-- Hamburger Menu for Mobile -->
-          <div class="block lg:hidden">
-            <button id="hamburger-icon" class="text-white focus:outline-none">
-              <i class="fas fa-bars text-2xl"></i>
-            </button>
-          </div>
+     
 
-          <!-- Menu for Desktop -->
-          <ul class="hidden lg:flex space-x-6">
-            <li><a href="#upcoming-events" class="hover:text-gray-400">Upcoming Events</a></li>
-            <li><a href="#past-events" class="hover:text-gray-400">Past Events</a></li>
-            <li><a href="#about" class="hover:text-gray-400">About</a></li>
-            <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <!-- Mobile Menu -->
-      <div id="mobile-menu">
-        <a href="#upcoming-events">Upcoming Events</a>
-        <a href="#about">About</a>
-        <a href="#past-events">Past Events</a>
-        <a href="#contact">Contact</a>
-      </div>
-
-      <section class="relative w-full max-w-4xl mx-auto text-center py-8">
+      <section class="relative w-full max-w-4xl mx-auto text-center ">
         <h2 class="outlined-text absolute inset-0 flex flex-col items-center justify-center text-3xl font-bold text-white z-10">
           <span>COLD HANDS COLLECTIVE</span>
           <hr class="my-2 w-1/2 border-white" />
@@ -77,7 +83,7 @@
       
 
       <!-- Upcoming Events -->
-      <section class="w-full max-w-4xl mx-auto text-center py-8">
+      <section id="upcoming-events-header" class="w-full max-w-4xl mx-auto text-center py-8">
         <h1 class="text-2xl font-semibold mb-4">Upcoming Events</h1>
         <div id="upcoming-events" class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <!-- <div class="flex flex-col items-center">
@@ -103,7 +109,7 @@
       </section>
 
       <!-- Past Events -->
-      <section class="w-full max-w-4xl mx-auto text-center py-8">
+      <section id="past-events-header"  class="w-full max-w-4xl mx-auto text-center py-8">
         <h1 class="text-2xl font-semibold mb-4">Past Events</h1>
         <div id="past-events"class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <!-- <div  class="flex flex-col items-center">
