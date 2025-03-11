@@ -1,8 +1,8 @@
 // Array of objects containing image URLs and event names
 const events = [
-  { image: "https://placehold.co/500x300", name: "Event 1.1" },
-  { image: "https://placehold.co/500x300", name: "Event 1.2" },
-  { image: "https://placehold.co/500x300", name: "Event 1.3" },
+  { image: "https://placehold.co/500x300", name: "Event 1.1", url: "#" },
+  { image: "https://placehold.co/500x300", name: "Event 1.2", url: "#" },
+  { image: "https://placehold.co/500x300", name: "Event 1.3", url: "#" },
   // Add more events as needed
 ];
 

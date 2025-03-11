@@ -11,11 +11,7 @@ const events = [
     name: "Black Tie Basement - Biweekly Friday @ 6PM GMT",
     url: "https://start.gg/btb",
   },
-  {
-    image: "https://placehold.co/500x300",
-    name: "Event 1.3",
-    url: "https://start.gg/example-event-3",
-  },
+
   // Add more events as needed
 ];
 
@@ -28,12 +24,20 @@ events.forEach((event) => {
   const tile = document.createElement("div");
   tile.classList.add("flex", "flex-col", "items-center");
 
+  // Create the anchor element to wrap the image
+  const imageLink = document.createElement("a");
+  imageLink.href = event.url; // Set the URL
+  imageLink.target = "_blank"; // Open the link in a new tab
+
   // Create the image element
   const img = document.createElement("img");
   img.classList.add("w-full", "h-auto");
   img.src = event.image;
   img.alt = event.name;
   img.classList.add("border-2", "border-black");
+
+  // Append the image to the anchor
+  imageLink.appendChild(img);
 
   // Create the anchor element for the event name
   const a = document.createElement("a");
@@ -42,8 +46,8 @@ events.forEach((event) => {
   a.target = "_blank"; // Open the link in a new tab
   a.textContent = event.name;
 
-  // Append image and anchor to the tile div
-  tile.appendChild(img);
+  // Append the clickable image and anchor to the tile div
+  tile.appendChild(imageLink);
   tile.appendChild(a);
 
   // Append the tile to the container
