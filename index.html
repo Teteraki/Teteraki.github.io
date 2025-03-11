@@ -7,7 +7,7 @@
   <script src="js/upcoming-event-tile.js" type="module"></script>
   <script src="js/past-event-tile.js" type="module"></script>
 
-  <link rel="stylesheet" href="style/custom.css">
+  <link rel="stylesheet" href="style/custom.css" />
   <link
     href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     rel="stylesheet"
@@ -23,14 +23,21 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
   />
 
-
-  <body class="min-h-screen flex flex-col items-center justify-center">
-    
+  <body
+    class="min-h-screen flex flex-col items-center justify-center bg-gray-100"
+  >
     <!-- Navigation Bar -->
     <nav class="w-full bg-gray-900 text-white py-4">
       <div class="max-w-4xl mx-auto flex justify-between items-center px-4">
-        <a href="https://youtube.com" class="text-xl font-bold text-white flex items-center">
-          <img src="https://placehold.co/300x100" alt="Logo" class="h-12 mr-4" />
+        <a
+          href="https://youtube.com"
+          class="text-xl font-bold text-white flex items-center"
+        >
+          <img
+            src="https://placehold.co/300x100"
+            alt="Logo"
+            class="h-12 mr-4"
+          />
         </a>
 
         <!-- Hamburger Menu for Mobile -->
@@ -42,14 +49,19 @@
 
         <!-- Menu for Desktop -->
         <ul class="hidden lg:flex space-x-6">
-          <li><a href="#upcoming-events" class="hover:text-gray-400">Upcoming Events</a></li>
+          <li>
+            <a href="#upcoming-events" class="hover:text-gray-400"
+              >Upcoming Events</a
+            >
+          </li>
           <li><a href="#about" class="hover:text-gray-400">About</a></li>
-          <li><a href="#past-events" class="hover:text-gray-400">Past Events</a></li>
+          <li>
+            <a href="#past-events" class="hover:text-gray-400">Past Events</a>
+          </li>
           <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
         </ul>
       </div>
     </nav>
-
 
     <!-- Mobile Menu -->
     <div id="mobile-menu">
@@ -59,31 +71,41 @@
       <a href="#contact">Contact</a>
     </div>
 
-
-    <div class="bg-white w-full max-w-4xl mx-auto">
-
-      
-
-     
-
-      <section class="relative w-full max-w-4xl mx-auto text-center ">
-        <h2 class="outlined-text absolute inset-0 flex flex-col items-center justify-center text-3xl font-bold text-white z-10">
+    <div class="bg-gray-100 w-full max-w-4xl mx-auto">
+      <section class="relative w-full max-w-4xl mx-auto text-center">
+        <h2
+          class="outlined-text absolute inset-0 flex flex-col items-center justify-center text-3xl font-bold text-white z-10"
+        >
           <span>COLD HANDS COLLECTIVE</span>
           <hr class="my-2 w-1/2 border-white" />
           <span>CALGARY'S NEWEST NON-PROFIT ESPORTS EVENT ORGANIZER</span>
         </h2>
-        
-        <div class="image-carousel">
-          <img class="carousel-image" src="https://media.discordapp.net/attachments/1338022812002160680/1340496393038725192/IMG_4210.jpg?ex=67d03bcd&is=67ceea4d&hm=73e6d17c9be71c353aa81e3f826d44c070d417d5f2084f5e1dd95d399a68c06e&=&format=webp&width=981&height=736" alt="Event Image">
-          <img class="carousel-image" src="https://via.placeholder.com/1200x800.png?text=Image+2" alt="Event Image 2">
-          <img class="carousel-image" src="https://via.placeholder.com/1200x800.png?text=Image+3" alt="Event Image 3">
+
+        <div class="image-carousel bg-black border-2 border-black">
+          <img
+            class="carousel-image opacity-70"
+            src="https://media.discordapp.net/attachments/1338022812002160680/1340496393038725192/IMG_4210.jpg?ex=67d03bcd&is=67ceea4d&hm=73e6d17c9be71c353aa81e3f826d44c070d417d5f2084f5e1dd95d399a68c06e&=&format=webp&width=981&height=736"
+            alt="Event Image"
+          />
+          <img
+            class="carousel-image opacity-70"
+            src="https://media.discordapp.net/attachments/1338022812002160680/1340496389355868190/IMG_4197.jpg?ex=67d03bcc&is=67ceea4c&hm=f22f3a92860e3c495d49e92c0a63d53a9c74e010f366bfca843c23f986b26b0d&=&format=webp&width=1118&height=838"
+            alt="Event Image 2"
+          />
+
+          <img
+            class="carousel-image opacity-70"
+            src="https://media.discordapp.net/attachments/1338022812002160680/1340496103774228540/IMG_4048.jpg?ex=67d03b88&is=67ceea08&hm=732fd69457c0c3c16ffe8a861f5bd0c450e8e14492545c31217baee5afce39d1&=&format=webp&width=1597&height=1198"
+            alt="Event Image 3"
+          />
         </div>
       </section>
-      
-      
 
       <!-- Upcoming Events -->
-      <section id="upcoming-events-header" class="w-full max-w-4xl mx-auto text-center py-8">
+      <section
+        id="upcoming-events-header"
+        class="w-full max-w-4xl mx-auto text-center py-8"
+      >
         <h1 class="text-2xl font-semibold mb-4">Upcoming Events</h1>
         <div id="upcoming-events" class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <!-- <div class="flex flex-col items-center">
@@ -98,65 +120,93 @@
       </section>
 
       <!-- What We Do Section -->
-      <section id="about" class="w-full max-w-4xl mx-auto text-center py-8 bg-gray-100">
+      <section
+        id="about"
+        class="w-full max-w-4xl mx-auto text-center py-8 bg-gray-100"
+      >
         <h1 class="text-2xl font-semibold mb-4">What We Do</h1>
         <p class="text-lg text-gray-700">
-          At Cold Hands Collective, we are dedicated to organizing and hosting Smash Bros. and competitive events for the Calgary community.
-          Our goal is to create a welcoming and exciting environment where those of all skill levels can come together,
-          compete, and have fun. Whether it's casual tournaments or professional events, we aim to provide high-quality
-          experiences for both players and spectators alike. Join us as we continue to grow and build the scene in Calgary!
+          At Cold Hands Collective, we are dedicated to organizing and hosting
+          Smash Bros. and competitive events for the Calgary community. Our goal
+          is to create a welcoming and exciting environment where those of all
+          skill levels can come together, compete, and have fun. Whether it's
+          casual tournaments or professional events, we aim to provide
+          high-quality experiences for both players and spectators alike. Join
+          us as we continue to grow and build the scene in Calgary!
         </p>
       </section>
 
       <!-- Past Events -->
-      <section id="past-events-header"  class="w-full max-w-4xl mx-auto text-center py-8">
+      <section
+        id="past-events-header"
+        class="w-full max-w-4xl mx-auto text-center py-8"
+      >
         <h1 class="text-2xl font-semibold mb-4">Past Events</h1>
-        <div id="past-events"class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <!-- <div  class="flex flex-col items-center">
-            <img class="w-full h-auto" src="https://placehold.co/500x300" alt="Event 1.2">
-            <p class="mt-2">Event 1.2</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <img class="w-full h-auto" src="https://placehold.co/500x300" alt="Event 2.2">
-            <p class="mt-2">Event 2.2</p>
-          </div> -->
-        </div>
+        <div
+          id="past-events"
+          class="grid grid-cols-1 sm:grid-cols-2 gap-8"
+        ></div>
       </section>
 
       <!-- Contact Us -->
-      <section id="contact" class="w-full max-w-4xl mx-auto text-center py-8 bg-gray-200">
+      <section
+        id="contact"
+        class="w-full max-w-4xl mx-auto text-center py-8 bg-gray-100"
+      >
         <h1 class="text-2xl font-semibold mb-4">Contact Us</h1>
-        <p class="text-lg text-gray-700">For inquiries or collaborations, feel free to reach out to us via our social media or email!</p>
+        <p class="text-lg text-gray-700">
+          For inquiries or collaborations, feel free to reach out to us via our
+          social media or email!
+        </p>
         <a href="mailto:info@coldhands.org">info@coldhands.org</a>
       </section>
-
     </div>
 
     <!-- Footer Section -->
     <footer class="w-full bg-gray-900 text-white py-8">
       <div class="max-w-4xl mx-auto text-center">
         <div class="flex justify-center mb-4">
-          <img src="https://placehold.co/300x100" alt="Logo" class="h-16 mr-4" />
+          <img
+            src="https://placehold.co/300x100"
+            alt="Logo"
+            class="h-16 mr-4"
+          />
         </div>
-        <p class="mb-4">&copy; 2025 Cold Hands Collective. All rights reserved.</p>
+        <p class="mb-4">
+          &copy; 2025 Cold Hands Collective. All rights reserved.
+        </p>
         <div class="flex justify-center space-x-6">
           <!-- Social Media Icons -->
-          <a href="https://twitch.tv/coldhandscollective" target="_blank" class="text-white hover:text-gray-400">
+          <a
+            href="https://twitch.tv/coldhandscollective"
+            target="_blank"
+            class="text-white hover:text-gray-400"
+          >
             <i class="fab fa-twitch text-2xl"></i>
           </a>
-          <a href="https://twitter.com" target="_blank" class="text-white hover:text-gray-400">
+          <a
+            href="https://x.com/yycoldhands"
+            target="_blank"
+            class="text-white hover:text-gray-400"
+          >
             <i class="fab fa-twitter text-2xl"></i>
           </a>
-          <a href="https://instagram.com" target="_blank" class="text-white hover:text-gray-400">
+          <a
+            href="https://instagram.com/yycoldhands/"
+            target="_blank"
+            class="text-white hover:text-gray-400"
+          >
             <i class="fab fa-instagram text-2xl"></i>
           </a>
-          <a href="https://youtube.com" target="_blank" class="text-white hover:text-gray-400">
+          <a
+            href="https://www.youtube.com/@yycoldhands"
+            target="_blank"
+            class="text-white hover:text-gray-400"
+          >
             <i class="fab fa-youtube text-2xl"></i>
           </a>
         </div>
       </div>
     </footer>
-
-
   </body>
 </html>
