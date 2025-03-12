@@ -4,13 +4,13 @@ const upcoming_events = [
     {
       image:
         "../img/events/abmc.webp",
-      name: "Alberta Melee Mountain Climb - Biweekly Netplay Sunday @ 7PM GMT",
+      name: "Alberta Melee Mountain Climb - Biweekly Netplay Sunday's @ 7PM GMT",
       url: "https://start.gg/abmc",
     },
     {
       image:
         "../img/events/btb.webp",
-      name: "Black Tie Basement - Biweekly Friday @ 6PM GMT",
+      name: "Black Tie Basement - Biweekly Friday's @ 6PM GMT",
       url: "https://start.gg/btb",
     },
   
