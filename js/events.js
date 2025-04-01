@@ -1,4 +1,4 @@
-import { createEventTiles } from "./event-tile-factory.js";
+import { createEventTiles } from "/js/event-tile-factory.js";
 
 const upcoming_events = [
     {
