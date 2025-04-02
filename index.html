@@ -94,7 +94,7 @@
           <span>CALGARY'S NEWEST NON-PROFIT ESPORTS EVENT ORGANIZER</span>
         </h2>
     
-        <div class="image-carousel bg-black border-2 border-black">
+        <div class="image-carousel bg-black border-2 border-gray-400">
           <img class="carousel-image opacity-70" src="img/promo/promo1.webp" alt="Event Image" />
           <img class="carousel-image opacity-70" src="img/promo/promo2.webp" alt="Event Image 2" />
           <img class="carousel-image opacity-70" src="img/promo/promo3.webp" alt="Event Image 3" />
@@ -111,22 +111,30 @@
         <div id="upcoming-events" class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <!-- javascript will populate this section -->
         </div>
-        <h1 class="text-2xl font-semibold mb-4">Event Calendar</h1>
-        <div id="google-calendar" class="w-full max-w-4xl mx-auto flex justify-center py-8">
-          <iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&ctz=America%2FEdmonton&showPrint=0&mode=AGENDA&src=Y183MmYyZTQwNDg2NWJjZmZhOWYxYzk4MGFlNzU1NWM5Y2U2YTdlNGJiZmU0OGMyN2Y1ODM2MDA4NzRiY2IxY2NlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23616161" style="border:solid 2px #777" width="1000" height="400" frameborder="0" scrolling="no"></iframe>
+
+  
+        <h1 class="text-2xl font-semibold mb-4 py-4">Event Calendar</h1>
+
+        <div id="event-twitter-feed" class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <!-- javascript will populate this section -->
+
+          <div id="google-calendar" class="flex justify-center border-2 border-gray-400 rounded-xl">
+            <iframe class=" rounded-xl"src="https://calendar.google.com/calendar/embed?height=500&wkst=1&ctz=America%2FEdmonton&showPrint=0&mode=AGENDA&src=Y183MmYyZTQwNDg2NWJjZmZhOWYxYzk4MGFlNzU1NWM5Y2U2YTdlNGJiZmU0OGMyN2Y1ODM2MDA4NzRiY2IxY2NlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23616161" width="1000" height="400" frameborder="0" scrolling="no"></iframe>
+          </div>
+
+          <div id="twitter-feed">
+            <a class="twitter-timeline border-2 border-gray-400" href="https://twitter.com/yycoldhands?ref_src=twsrc%5Etfw">Tweets by yycoldhands</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+          </div>
         </div>
+
+
+        
       </section>
     
-      <!-- What We Do Section
-      <section id="about" class="w-full max-w-4xl mx-auto text-center py-8 bg-gray-100">
-        <h1 class="text-2xl font-semibold mb-4">What We Do</h1>
-        <p class="text-lg text-gray-700">
-          At Cold Hands Collective, we are dedicated to organizing and hosting Smash Bros. and competitive events for the Calgary community. Our goal is to create a welcoming and exciting environment where those of all skill levels can come together, compete, and have fun. Whether it's casual tournaments or professional events, we aim to provide high-quality experiences for both players and spectators alike. Join us as we continue to grow and build the scene in Calgary!
-        </p>
-      </section> -->
-
+   
       <!-- What We Do Section -->
-<section id="about" class="w-full max-w-4xl mx-auto text-center py-8 bg-gray-100">
+<section id="about" class="w-full max-w-4xl mx-auto text-center py-8">
   <h1 class="text-2xl font-semibold mb-4">What We Do</h1>
   <p class="text-lg text-gray-700 mb-8">
     At Cold Hands Collective, we are dedicated to organizing and hosting Smash Bros. and competitive events for the Calgary community. Our goal is to create a welcoming and exciting environment where those of all skill levels can come together, compete, and have fun. Whether it's casual tournaments or professional events, we aim to provide high-quality experiences for both players and spectators alike. Join us as we continue to grow and build the scene in Calgary!
