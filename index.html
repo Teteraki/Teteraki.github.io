@@ -63,13 +63,13 @@
         <!-- Menu for Desktop -->
         <ul class="hidden lg:flex space-x-4">
           <li>
-            <a href="#upcoming-events" class="border-2 border-dashed rounded-xl bg-yellow-500 hover:bg-purple-400 py-2 px-2"
+            <a href="#upcoming-events-header" class="border-2 border-dashed rounded-xl bg-yellow-500 hover:bg-purple-400 py-2 px-2"
               >Upcoming Events</a
             >
           </li>
           <li><a href="#about" class="border-2 border-dashed rounded-xl bg-yellow-500 hover:bg-purple-400 py-2 px-2">About</a></li>
           <li>
-            <a href="#past-events" class="border-2 border-dashed rounded-xl bg-yellow-500 hover:bg-purple-400 py-2 px-2">Past Events</a>
+            <a href="#past-events-header" class="border-2 border-dashed rounded-xl bg-yellow-500 hover:bg-purple-400 py-2 px-2">Past Events</a>
           </li>
           <li><a href="#contact" class="border-2 border-dashed rounded-xl bg-yellow-500 hover:bg-purple-400 py-2 px-2">Contact</a></li>
         </ul>
@@ -94,7 +94,7 @@
           <span>CALGARY'S NEWEST NON-PROFIT ESPORTS EVENT ORGANIZER</span>
         </h2>
     
-        <div class="image-carousel bg-black border-2 border-black">
+        <div class="image-carousel bg-black border-2 border-gray-400">
           <img class="carousel-image opacity-70" src="img/promo/promo1.webp" alt="Event Image" />
           <img class="carousel-image opacity-70" src="img/promo/promo2.webp" alt="Event Image 2" />
           <img class="carousel-image opacity-70" src="img/promo/promo3.webp" alt="Event Image 3" />
@@ -102,36 +102,44 @@
       </section>
     </div>
 
-    <div class="bg-gray-100 w-full max-w-4xl mx-auto px-4 lg:px-0">
+    <div id="upcoming-events-header" class="bg-gray-100 w-full max-w-4xl mx-auto px-4 py-16 lg:px-0">
       <!-- Upcoming Events -->
        
-      <section id="upcoming-events-header" class="w-full max-w-4xl mx-auto text-center py-8">
+      <section class="w-full max-w-4xl mx-auto text-center">
         <h1 class="text-2xl font-semibold mb-4">Upcoming Events</h1>
         
         <div id="upcoming-events" class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <!-- javascript will populate this section -->
         </div>
-        <h1 class="text-2xl font-semibold mb-4">Event Calendar</h1>
-        <div id="google-calendar" class="w-full max-w-4xl mx-auto flex justify-center py-8">
-          <iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&ctz=America%2FEdmonton&showPrint=0&mode=AGENDA&src=Y183MmYyZTQwNDg2NWJjZmZhOWYxYzk4MGFlNzU1NWM5Y2U2YTdlNGJiZmU0OGMyN2Y1ODM2MDA4NzRiY2IxY2NlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23616161" style="border:solid 2px #777" width="1000" height="400" frameborder="0" scrolling="no"></iframe>
+
+  
+        <section id="event-calendar" class="py-8">
+          <h1 class="text-2xl font-semibold mb-4">Event Calendar</h1>
+
+          <div id="event-twitter-feed" class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <!-- javascript will populate this section -->
+  
+            <div id="google-calendar" class="flex justify-center border-2 border-gray-400 rounded-xl">
+              <iframe class=" rounded-xl"src="https://calendar.google.com/calendar/embed?height=500&wkst=1&ctz=America%2FEdmonton&showPrint=0&mode=AGENDA&src=Y183MmYyZTQwNDg2NWJjZmZhOWYxYzk4MGFlNzU1NWM5Y2U2YTdlNGJiZmU0OGMyN2Y1ODM2MDA4NzRiY2IxY2NlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23616161" width="1000" height="400" frameborder="0" scrolling="no"></iframe>
+            </div>
+  
+            <div id="twitter-feed" class="border-2 border-gray-400 rounded-xl">
+              <a class="twitter-timeline" href="https://twitter.com/yycoldhands?ref_src=twsrc%5Etfw">Tweets by yycoldhands</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  
+            </div>
+          </div>
         </div>
+        
       </section>
     
-      <!-- What We Do Section
-      <section id="about" class="w-full max-w-4xl mx-auto text-center py-8 bg-gray-100">
-        <h1 class="text-2xl font-semibold mb-4">What We Do</h1>
-        <p class="text-lg text-gray-700">
-          At Cold Hands Collective, we are dedicated to organizing and hosting Smash Bros. and competitive events for the Calgary community. Our goal is to create a welcoming and exciting environment where those of all skill levels can come together, compete, and have fun. Whether it's casual tournaments or professional events, we aim to provide high-quality experiences for both players and spectators alike. Join us as we continue to grow and build the scene in Calgary!
-        </p>
-      </section> -->
-
+   
       <!-- What We Do Section -->
-<section id="about" class="w-full max-w-4xl mx-auto text-center py-8 bg-gray-100">
+<section id="about" class="w-full max-w-4xl mx-auto text-center">
   <h1 class="text-2xl font-semibold mb-4">What We Do</h1>
   <p class="text-lg text-gray-700 mb-8">
     At Cold Hands Collective, we are dedicated to organizing and hosting Smash Bros. and competitive events for the Calgary community. Our goal is to create a welcoming and exciting environment where those of all skill levels can come together, compete, and have fun. Whether it's casual tournaments or professional events, we aim to provide high-quality experiences for both players and spectators alike. Join us as we continue to grow and build the scene in Calgary!
   </p>
-  <h1 class="text-2xl font-semibold mb-4">Founders</h1>
+  <h1 class="text-2xl font-semibold mb-4 py-8">Founders</h1>
   <!-- Team Members Section -->
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 

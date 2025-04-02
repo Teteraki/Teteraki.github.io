@@ -13,7 +13,7 @@ export function createEventTiles(events, container) {
         img.classList.add("w-full", "h-auto");
         img.src = event.image;
         img.alt = event.name;
-        img.classList.add("border-2", "border-black");
+        img.classList.add("border-2", "border-gray-400", "rounded-xl");
       
         // Append the image to the anchor
         imageLink.appendChild(img);
