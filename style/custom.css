@@ -78,3 +78,9 @@
     opacity: 0;
   }
 }
+
+
+body {
+  /* background-image: linear-gradient(to bottom right, white, rgb(63, 63, 63)); */
+  background-color: rgb(195, 195, 195);
+}
