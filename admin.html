@@ -1,0 +1,90 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login - Cold Hands Collective</title>
+
+    <link rel="icon" type="image/x-icon" href="img/promo/chc1.webp" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Walter Turncoat", cursive;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex items-center justify-center bg-gray-100 px-4">
+    <div class="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
+      <div class="text-center mb-6">
+        <img
+          src="img/promo/chc1.webp"
+          alt="Cold Hands Collective Logo"
+          class="h-20 mx-auto mb-4"
+        />
+        <h1 class="text-2xl font-semibold text-gray-800">Admin Login</h1>
+      </div>
+      <form id="admin-login-form" class="space-y-4">
+        <div>
+          <label for="username" class="block text-gray-700 mb-1"
+            >Username</label
+          >
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600"
+          />
+        </div>
+        <div>
+          <label for="password" class="block text-gray-700 mb-1"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600"
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-gray-800 text-white py-2 rounded-md hover:bg-gray-700 transition"
+        >
+          Login
+        </button>
+      </form>
+      <p id="login-error" class="text-red-500 text-sm mt-4 hidden">
+        Invalid credentials.
+      </p>
+    </div>
+
+    <script type="module">
+      document
+        .getElementById("admin-login-form")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          const username = e.target.username.value;
+          const password = e.target.password.value;
+
+          // Replace this with actual auth logic
+          if (username === "admin" && password === "password123") {
+            window.location.href = "dashboard.html"; // your admin dashboard page
+          } else {
+            document.getElementById("login-error").classList.remove("hidden");
+          }
+        });
+    </script>
+  </body>
+</html> -->

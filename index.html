@@ -6,19 +6,22 @@
   <script src="js/hamburger.js" type="module"></script>
   <script src="js/events.js" type="module"></script>
  
+ 
+<!-- MailerLite Universal -->
+<script>
+  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+  .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+  n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+  ml('account', '1437495');
+</script>
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
 
-  <!-- <style>
-    * {
-      font-family: 'Walter Turncoat', cursive;
-      font-weight: 400;
-      font-style: normal;
-    }
-  </style> -->
-
+  
 
   <link rel="stylesheet" href="style/custom.css" />
   <link
@@ -37,7 +40,7 @@
   />
 
   <body
-    class="min-h-screen flex flex-col items-center justify-center bg-gray-100"
+    class="min-h-screen flex flex-col items-center justify-center"
   >
     <!-- Navigation Bar -->
     <nav class="w-full bg-gray-900 text-white py-4">
@@ -86,30 +89,22 @@
       <a href="#contact">Contact</a>
     </div>
 
-    <div class="bg-gray-100 w-full max-w-4xl mx-auto">
-      <section class="relative w-full max-w-4xl mx-auto text-center">
-        <h2 class="outlined-text absolute inset-0 flex flex-col items-center justify-center text-4xl font-bold text-white z-10 p-4">
-          <span>COLD HANDS COLLECTIVE</span>
-          <hr class="my-2 w-1/2 border-white" />
-          <span>CALGARY'S NEWEST NON-PROFIT ESPORTS EVENT ORGANIZER</span>
-        </h2>
-    
-        <div class="image-carousel bg-black border-2 border-gray-400">
-          <img class="carousel-image opacity-70" src="img/promo/promo1.webp" alt="Event Image" />
-          <img class="carousel-image opacity-70" src="img/promo/promo2.webp" alt="Event Image 2" />
-          <img class="carousel-image opacity-70" src="img/promo/promo3.webp" alt="Event Image 3" />
-        </div>
-      </section>
+    <div class="image-carousel">
+      <img class="carousel-image opacity-70" src="img/promo/promo1.webp" alt="Event Image" />
+      <img class="carousel-image opacity-70" src="img/promo/promo2.webp" alt="Event Image 2" />
+      <img class="carousel-image opacity-70" src="img/promo/promo3.webp" alt="Event Image 3" />
     </div>
+    
 
-    <section id="mission" class=" text-center  w-full max-w-4xl mx-auto px-4 py-8 lg:px-0">
+    <section id="mission" class=" text-center bg-gray-100 w-full max-w-4xl mx-auto px-4 py-8 lg:px-8">
       <h1 class="text-2xl font-semibold mb-4">What We Do</h1>
       <p class="text-lg text-gray-700 mb-8">
         At Cold Hands Collective, we are dedicated to organizing and hosting Smash Bros. and competitive events for the Calgary community. Our goal is to create a welcoming and exciting environment where those of all skill levels can come together, compete, and have fun. Whether it's casual tournaments or professional events, we aim to provide high-quality experiences for both players and spectators alike. Join us as we continue to grow and build the scene in Calgary!
       </p>
+      
     </section>
 
-    <div id="upcoming-events-header" class="w-full max-w-4xl mx-auto px-4  lg:px-0">
+    <div id="upcoming-events-header" class="bg-gray-100 w-full max-w-4xl mx-auto px-4 lg:px-8">
       <!-- Upcoming Events -->
        
       <section class="w-full max-w-4xl mx-auto text-center">
@@ -124,24 +119,37 @@
 
 
 
-    <section id="event-calendar" class="w-full max-w-4xl mx-auto px-4 py-8 lg:px-0">
-      <h1 class="text-2xl font-semibold mb-4 text-center">Event Calendar</h1>
+    <section id="event-calendar" class="w-full  bg-gray-100 max-w-4xl mx-auto px-4 py-8 lg:px-4">
+      <h1 class="text-2xl font-semibold mb-4 text-center">Calendar and Newsletter</h1>
 
-      <div id="event-twitter-feed" class=" gap-8">
+      
        
-
-        <div id="google-calendar" class="flex justify-center border-2 border-gray-400 rounded-xl">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div id="google-calendar" class="flex justify-center rounded-xl">
           <iframe class=" rounded-xl"src="https://calendar.google.com/calendar/embed?height=500&wkst=1&ctz=America%2FEdmonton&showPrint=0&mode=AGENDA&src=Y183MmYyZTQwNDg2NWJjZmZhOWYxYzk4MGFlNzU1NWM5Y2U2YTdlNGJiZmU0OGMyN2Y1ODM2MDA4NzRiY2IxY2NlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23616161" width="1000" height="400" frameborder="0" scrolling="no"></iframe>
         </div>
 
+        <div class="text-center">
+          
+          <div class="ml-embedded" data-form="7VSOwW"></div>
+          <p class="py-8">
+            <b>Stay in the Loop with the Cold Hands Newsletter</b>
+            Get the latest tournament news, registration updates, and community highlights—delivered straight to your inbox every two weeks. Whether you're competing or cheering from the sidelines, you won't miss a beat. 🧊❄️
+            
+            Want to plan ahead? Add our events to your Google Calendar so you never miss a match!
+          </p>
+        </div>
+        
+
       </div>
+        
     </div>
     
   </section>
 
 
       <!-- Founders Section -->
-<section id="about" class=" text-center  w-full max-w-4xl mx-auto px-4 py-8 lg:px-0">
+<section id="about" class=" text-center  w-full bg-gray-100 max-w-4xl mx-auto px-4 py-8 lg:px-8">
   <h1 class="text-2xl font-semibold mb-4">Founders</h1>
  
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -177,9 +185,9 @@
 
     <!-- Profile 5 -->
     <div class="text-center">
-      <img src="https://placehold.co/400x400" alt="Profile 5" class="w-32 h-32 rounded-full mx-auto mb-4">
+      <img src="/img/profile/dylan.png" alt="Profile 5" class="w-32 h-32 rounded-full mx-auto mb-4">
       <h3 class="text-xl font-semibold">Dylan</h3>
-      <p class="text-gray-600">Dylan helped restart the MRU Smash club with Tyler post-COVID and assists on the Smash Ultimate side of Cold Hands. While he’s recently focused on finishing his university studies and IT career, he plans to return to competition soon!</p>
+      <p class="text-gray-600">Dylan is the Vice President of the MRU Smash Club and co-leads the Smash Ultimate side of Cold Hands alongside Tyler. He has a strong passion for programming and information technology, and is currently finishing his university studies while working in the IT field and advancing his career.</p>
     </div>
 
     <!-- Profile 6 -->
@@ -193,7 +201,7 @@
 
     
       <!-- Past Events -->
-      <section id="past-events-header" class="py-8 text-center w-full max-w-4xl mx-auto px-4  lg:px-0">
+      <section id="past-events-header" class="bg-gray-100 py-8 text-center w-full max-w-4xl mx-auto px-4  lg:px-8">
         <h1 class="text-2xl font-semibold mb-4">Past Events</h1>
         <div id="past-events" class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <!-- javascript will populate this section -->
@@ -201,7 +209,7 @@
       </section>
     
       <!-- Contact Us -->
-      <section id="contact" class="w-full max-w-4xl mx-auto text-center py-8">
+      <section id="contact" class="bg-gray-100 w-full max-w-4xl mx-auto text-center py-8 px-8">
         <h1 class="text-2xl font-semibold mb-4">Contact Us</h1>
         <p class="text-lg text-gray-700">
           For inquiries or collaborations, feel free to reach out to us via our social media or email!
