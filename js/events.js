@@ -12,7 +12,7 @@ const upcoming_events = [
     url: "https://start.gg/btb",
   },
   {
-    image: "/img/events/mru",
+    image: "/img/events/mru.webp",
     name: "MRU Smash - Weekly Tuesday's @6:30 PM (Ran by MRU Smash Club)",
     url: "https://start.gg/mrusmash",
   },
