@@ -2,37 +2,28 @@
 <html lang="en">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Webpage tab title. -->
   <title>Cold Hands Collective</title>
+
+  <!-- Import javascript scripts here. -->
+  <script src="js/mailer-lite.js" type="module"></script>
   <script src="js/hamburger.js" type="module"></script>
   <script src="js/events.js" type="module"></script>
  
+ <!-- Custom CSS and tailwind CSS and favicon. -->
+  <link rel="stylesheet" href="style/index.css" />
+  <link rel="stylesheet" href="style/navbar.css" />
+  <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  <link
+      rel="icon"
+      type="image/x-icon"
+      href="img/promo/chc1.webp"
+  /> 
  
-<!-- MailerLite Universal -->
-<script>
-  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-  .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-  n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-  ml('account', '1437495');
-</script>
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
-
-  
-
-  <link rel="stylesheet" href="style/custom.css" />
-  <link
-    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-    rel="stylesheet"
-  />
-  <link
-    rel="icon"
-    type="image/x-icon"
-    href="img/promo/chc1.webp"
-  />
   <!-- Font Awesome CDN for social media icons -->
   <link
     rel="stylesheet"
@@ -88,11 +79,11 @@
       <a href="#upcoming-events-header">Upcoming Events</a>
       <a href="#event-calendar">Calendar & Newsletter</a>
       <a href="#about">Founders</a>
-      
       <a href="#past-events-header">Past Events</a>
       <a href="#contact">Contact</a>
     </div>
 
+    <!-- Image Carousel -->
     <div class="image-carousel">
       <img class="carousel-image opacity-70" src="img/promo/promo1.webp" alt="Event Image" />
       <img class="carousel-image opacity-70" src="img/promo/promo2.webp" alt="Event Image 2" />

@@ -1,0 +1,30 @@
+#mobile-menu {
+  display: none; /* Hide the mobile menu by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background with transparency */
+  z-index: 50; /* Ensure the menu is above all other content */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mobile-menu a {
+  padding: 15px;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#mobile-menu a:hover {
+  color: gray;
+}
+
+/* Display the mobile menu when it's toggled */
+#mobile-menu.show {
+  display: flex;
+}
