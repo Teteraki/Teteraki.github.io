@@ -1,0 +1,17 @@
+body {
+  background-color: #f6c735;
+}
+
+.login-box {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-logo {
+  height: 80px;
+}
