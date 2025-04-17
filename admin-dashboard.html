@@ -1,14 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="js/firebase/firebase.js" type="module"></script>
-    <script src="js/firebase/firebase-auth-state.js" type="module"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test AUTH STATE Page</title>
+    <title>Dashboard | Cold Hands Collective</title>
+
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style/admin-dashboard.css" />
+
+    <!-- Logo -->
+    <link rel="icon" type="image/x-icon" href="img/promo/chc1.webp" />
+
+    <!-- Firebase SDK (Legacy Version v8) -->
+    <script src="/js/firebase/firebase.js" type="module"></script>
+    <script src="/js/firebase/firebase-auth-state.js" type="module"></script>
+    <script src="/js/firebase/firebase-logout.js" type="module"></script>
   </head>
-  <body>
-    <p>wow</p>
+
+  <body class="min-h-screen bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="w-full bg-gray-900 text-white py-4">
+      <div class="max-w-4xl mx-auto flex justify-between items-center px-4">
+        <a
+          href="index.html"
+          class="text-xl font-bold text-white flex items-center"
+        >
+          <img src="img/promo/chc1.webp" alt="Logo" class="h-16 mr-4" />
+          Cold Hands Collective
+        </a>
+        <!-- Menu for Admin -->
+        <ul class="hidden lg:flex space-x-4">
+          <li><a href="#events" class="py-2 px-2">Events</a></li>
+          <li><a href="#newsletter" class="py-2 px-2">Newsletter</a></li>
+          <li><a href="#analytics" class="py-2 px-2">Analytics</a></li>
+          <li><a href="#settings" class="py-2 px-2">Settings</a></li>
+        </ul>
+        <!-- Logout Button -->
+        <button
+          id="logout-button"
+          class="bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition-all"
+        >
+          Logout
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-8">
+      <h1 class="text-3xl text-center text-gray-800 font-semibold mb-6">
+        Admin Dashboard
+      </h1>
+
+      <!-- Admin Cards Grid (3x2 Layout) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Events Management Card -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        >
+          <h2 class="text-xl font-semibold mb-4 text-gray-800">
+            Events Management
+          </h2>
+          <p class="text-gray-600">
+            Create, manage, and track upcoming and past events.
+          </p>
+          <a href="#events" class="text-blue-600 hover:underline"
+            >Manage Events</a
+          >
+        </div>
+
+        <!-- Newsletter Management Card -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        >
+          <h2 class="text-xl font-semibold mb-4 text-gray-800">
+            Newsletter Management
+          </h2>
+          <p class="text-gray-600">
+            Create, send, and manage newsletters for your audience.
+          </p>
+          <a href="#newsletter" class="text-blue-600 hover:underline"
+            >Manage Newsletter</a
+          >
+        </div>
+
+        <!-- Analytics Card -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        >
+          <h2 class="text-xl font-semibold mb-4 text-gray-800">Analytics</h2>
+          <p class="text-gray-600">
+            View site traffic, event participation stats, and more.
+          </p>
+          <a href="#analytics" class="text-blue-600 hover:underline"
+            >View Analytics</a
+          >
+        </div>
+
+        <!-- Settings Card -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        >
+          <h2 class="text-xl font-semibold mb-4 text-gray-800">Settings</h2>
+          <p class="text-gray-600">
+            Configure site settings, integrations, and preferences.
+          </p>
+          <a href="#settings" class="text-blue-600 hover:underline"
+            >Change Settings</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4 mt-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <p>&copy; 2025 Cold Hands Collective. All rights reserved.</p>
+        <div class="flex justify-center space-x-6 mt-4">
+          <a
+            href="https://twitch.tv/coldhandscollective"
+            target="_blank"
+            class="text-white hover:text-gray-400"
+          >
+            <i class="fab fa-twitch text-2xl"></i>
+          </a>
+          <a
+            href="https://x.com/yycoldhands"
+            target="_blank"
+            class="text-white hover:text-gray-400"
+          >
+            <i class="fab fa-twitter text-2xl"></i>
+          </a>
+          <a
+            href="https://instagram.com/yycoldhands"
+            target="_blank"
+            class="text-white hover:text-gray-400"
+          >
+            <i class="fab fa-instagram text-2xl"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@yycoldhands"
+            target="_blank"
+            class="text-white hover:text-gray-400"
+          >
+            <i class="fab fa-youtube text-2xl"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Logout Functionality -->
+    <script>
+      // Logout function for legacy Firebase
+      function logout() {
+        firebase
+          .auth()
+          .signOut()
+          .then(() => {
+            alert("You have logged out.");
+            window.location.href = "login.html"; // Redirect to the login page
+          })
+          .catch((error) => {
+            alert("Error logging out: " + error.message);
+          });
+      }
+    </script>
   </body>
 </html>

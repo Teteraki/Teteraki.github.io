@@ -1,6 +1,7 @@
 import {
   getAuth,
   signInWithEmailAndPassword,
+  signOut,
 } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
 
 const auth = getAuth();
