@@ -11,7 +11,6 @@ body {
   overflow: hidden;
 }
 
-/* Shrink height on small screens */
 @media (max-width: 640px) {
   .image-carousel {
     height: 400px;
@@ -26,29 +25,46 @@ body {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  animation: slideShow 12s infinite;
+  animation: fade 32s infinite;
 }
 
+/* Delay each image by 4s * index */
 .carousel-image:nth-child(1) {
   animation-delay: 0s;
 }
-
 .carousel-image:nth-child(2) {
   animation-delay: 4s;
 }
-
 .carousel-image:nth-child(3) {
   animation-delay: 8s;
 }
+.carousel-image:nth-child(4) {
+  animation-delay: 12s;
+}
+.carousel-image:nth-child(5) {
+  animation-delay: 16s;
+}
+.carousel-image:nth-child(6) {
+  animation-delay: 20s;
+}
+.carousel-image:nth-child(7) {
+  animation-delay: 24s;
+}
+.carousel-image:nth-child(8) {
+  animation-delay: 28s;
+}
 
-@keyframes slideShow {
+@keyframes fade {
   0% {
     opacity: 0;
   }
-  33% {
+  3% {
     opacity: 1;
   }
-  66% {
+  12.5% {
+    opacity: 1;
+  }
+  15% {
     opacity: 0;
   }
   100% {
