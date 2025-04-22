@@ -20,6 +20,8 @@
 );
 ml("account", "1437495");
 
+// Newsletter popup.
+
 window.addEventListener("load", () => {
   if (!localStorage.getItem("newsletterPopupShown")) {
     document.getElementById("newsletterModal").classList.remove("hidden");
