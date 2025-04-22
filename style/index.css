@@ -17,7 +17,7 @@ body {
   }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 2000px) {
   .image-carousel {
     height: 850px; /* Larger height for 1440p and up */
   }
