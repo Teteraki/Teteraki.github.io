@@ -1,6 +1,6 @@
 const imageData = [
   {
-    src: "img/promo/Cold Hands Logo PNG.png",
+    src: "img/promo/main.png",
     alt: "Event Image 1",
   },
   {
