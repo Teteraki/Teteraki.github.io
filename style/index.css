@@ -17,6 +17,12 @@ body {
   }
 }
 
+@media (min-width: 2560px) {
+  .image-carousel {
+    height: 850px; /* Larger height for 1440p and up */
+  }
+}
+
 .carousel-image {
   position: absolute;
   top: 0;
