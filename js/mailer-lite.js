@@ -21,21 +21,28 @@
 ml("account", "1437495");
 
 // Newsletter popup.
-
 window.addEventListener("load", () => {
-  if (!localStorage.getItem("newsletterPopupShown")) {
+  const hasSignedUp = localStorage.getItem("newsletterSignedUp");
+  const noThanksClicked = sessionStorage.getItem("newsletterNoThanks");
+
+  // Only show the popup if user hasn't signed up and didn't already say "no thanks" this session
+  if (!hasSignedUp && !noThanksClicked) {
     document.getElementById("newsletterModal").classList.remove("hidden");
-    localStorage.setItem("newsletterPopupShown", "true");
   }
 
+  // Handle "No thanks" button
   document.getElementById("closeModalBtn").addEventListener("click", () => {
     document.getElementById("newsletterModal").classList.add("hidden");
+    // Mark that they said "no thanks" for this session
+    sessionStorage.setItem("newsletterNoThanks", "true");
   });
 
-  document.getElementById("newsletterForm").addEventListener("submit", (e) => {
-    e.preventDefault();
-    // You can handle form submission here, e.g. send via fetch()
-    alert("Thanks for subscribing!");
-    document.getElementById("newsletterModal").classList.add("hidden");
-  });
+  // Handle "Already signed up" button
+  document
+    .getElementById("alreadySignedUpBtn")
+    .addEventListener("click", () => {
+      document.getElementById("newsletterModal").classList.add("hidden");
+      // Mark that the user is signed up, so popup never shows again
+      localStorage.setItem("newsletterSignedUp", "true");
+    });
 });

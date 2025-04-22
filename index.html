@@ -113,7 +113,10 @@
       class="bg-gray-100 w-full max-w-4xl mx-auto px-4 lg:px-8"
     >
       <h1 class="text-2xl font-semibold mb-4 text-center">Upcoming Events</h1>
-      <div id="upcoming-events" class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div
+        id="upcoming-events"
+        class="text-center grid grid-cols-1 sm:grid-cols-2 gap-8"
+      >
         <!-- JavaScript will populate this section -->
       </div>
     </section>
@@ -331,7 +334,18 @@
       <div class="modal-content">
         <h2>Stay in the loop!</h2>
         <div class="ml-embedded" data-form="7VSOwW"></div>
-        <button class="close-btn" id="closeModalBtn">No thanks</button>
+        <button
+          class="underline text-blue-600 hover:text-blue-800"
+          id="closeModalBtn"
+        >
+          No thanks
+        </button>
+        <button
+          class="underline text-blue-600 hover:text-blue-800"
+          id="alreadySignedUpBtn"
+        >
+          Already signed up
+        </button>
       </div>
     </div>
   </body>
