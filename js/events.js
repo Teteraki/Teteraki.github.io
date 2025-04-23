@@ -2,17 +2,20 @@ import { createEventTiles } from "/js/event-tile-factory.js";
 
 const upcoming_events = [
   {
-    image: "/img/events/abmc.webp",
+    image:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/68007f6700275c33cb49/view?project=68007df0002d3c24adaa&mode=admin",
     name: "Alberta Melee Mountain Climb - Biweekly Netplay Sunday's @ 7PM GMT",
     url: "https://start.gg/abmc",
   },
   {
-    image: "/img/events/btb.webp",
+    image:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/68095d640011d92672e8/view?project=68007df0002d3c24adaa&mode=admin",
     name: "Black Tie Basement - Biweekly Friday's @ 6PM GMT",
     url: "https://start.gg/btb",
   },
   {
-    image: "/img/events/mru.webp",
+    image:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/68095e350011c9304ae2/view?project=68007df0002d3c24adaa&mode=admin",
     name: "MRU Smash - Weekly Tuesday's @6:30 PM (Ran by MRU Smash Club)",
     url: "https://start.gg/mrusmash",
   },
@@ -22,12 +25,14 @@ const upcoming_events = [
 
 const past_events = [
   {
-    image: "/img/events/saltflats.png",
+    image:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/68095e40002036619e8d/view?project=68007df0002d3c24adaa&mode=admin",
     name: "Salt Flats x Cold Hands Collective",
     url: "https://start.gg/saltflats",
   },
   {
-    image: "/img/events/fireplace.png",
+    image:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/68095e2f0012b249fe79/view?project=68007df0002d3c24adaa&mode=admin",
     name: "The Fireplace",
     url: "https://start.gg/fire",
   },

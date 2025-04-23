@@ -1,6 +1,6 @@
 const imageData = [
   {
-    src: "img/promo/main.png",
+    src: "https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/680958d80017cee7ca28/view?project=68007df0002d3c24adaa&mode=admin",
     alt: "Event Image 1",
   },
   {
