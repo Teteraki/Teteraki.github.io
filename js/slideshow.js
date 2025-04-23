@@ -8,7 +8,7 @@ const imageData = [
     alt: "Event Image 1",
   },
   {
-    src: "https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/6806e4b80012cd96bb4f/view?project=68007df0002d3c24adaa&mode=admin",
+    src: "https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/6809606a0014391c545f/view?project=68007df0002d3c24adaa&mode=admin",
     alt: "Event Image 2",
   },
   {
