@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Cold Hands Collective</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/style/index.css" />
+    <link rel="stylesheet" href="/style/navbar.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body class="min-h-screen bg-gradient-to-b from-fef9f9 via-fef9f9 to-cd432d">
+    <!-- Navigation Bar -->
+    <nav class="w-full bg-gray-900 text-white py-4">
+      <div class="max-w-4xl mx-auto flex justify-between items-center px-4">
+        <a href="/" class="text-xl font-bold text-white flex items-center">
+          <img
+            src="https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/68095c21001977dae23e/view?project=68007df0002d3c24adaa&mode=admin"
+            alt="Logo"
+            class="h-12 mr-4"
+          />
+        </a>
+        <button id="hamburger" class="lg:hidden text-white focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+        <ul class="hidden lg:flex space-x-4">
+          <li>
+            <a href="/index.html#upcoming-events-header" class="py-2 px-2"
+              >Upcoming Events</a
+            >
+          </li>
+          <li>
+            <a href="/index.html#event-calendar" class="py-2 px-2"
+              >Calendar & Newsletter</a
+            >
+          </li>
+          <li><a href="/founders.html" class="py-2 px-2">Founders</a></li>
+          <li>
+            <a href="/index.html#past-events-header" class="py-2 px-2"
+              >Past Events</a
+            >
+          </li>
+          <li><a href="/contact.html" class="py-2 px-2">Contact</a></li>
+        </ul>
+      </div>
+      <div
+        id="mobile-nav"
+        class="hidden lg:hidden bg-gray-900 text-white text-center"
+      >
+        <a href="/index.html#upcoming-events-header" class="block py-2"
+          >Upcoming Events</a
+        >
+        <a href="/index.html#event-calendar" class="block py-2"
+          >Calendar & Newsletter</a
+        >
+        <a href="/founders.html" class="block py-2">Founders</a>
+        <a href="/index.html#past-events-header" class="block py-2"
+          >Past Events</a
+        >
+        <a href="/contact.html" class="block py-2">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <section
+      class="max-w-2xl mx-auto bg-white bg-opacity-90 mt-12 rounded-xl shadow-lg p-8"
+    >
+      <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">
+        Contact Us
+      </h1>
+      <form action="#" method="POST" class="space-y-6">
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2" for="name"
+            >Name</label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f8c521]"
+          />
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2" for="email"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f8c521]"
+          />
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2" for="subject"
+            >Subject</label
+          >
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f8c521]"
+          />
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2" for="message"
+            >Message</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f8c521]"
+          ></textarea>
+        </div>
+
+        <div class="text-center">
+          <button
+            type="submit"
+            class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition duration-200"
+          >
+            Send Message
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- JS for Mobile Nav -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileNav = document.getElementById("mobile-nav");
+
+      hamburger.addEventListener("click", () => {
+        mobileNav.classList.toggle("hidden");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!mobileNav.contains(e.target) && !hamburger.contains(e.target)) {
+          mobileNav.classList.add("hidden");
+        }
+      });
+
+      const mobileLinks = mobileNav.querySelectorAll("a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileNav.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>

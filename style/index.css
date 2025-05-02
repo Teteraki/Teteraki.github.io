@@ -1,6 +1,5 @@
 body {
-  /* background-image: linear-gradient(to bottom right, white, rgb(63, 63, 63)); */
-  background-color: #f6c735;
+  background: linear-gradient(to bottom, #fef9f9 0%, #fef9f9 40%, #cd432d 100%);
 }
 
 .image-carousel {
