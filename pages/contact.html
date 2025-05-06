@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="/style/index.css" />
     <link rel="stylesheet" href="/style/navbar.css" />
     <script src="../js/navbar.js" type="module"></script>
-
+    <link
+    rel="icon"
+    type="image/x-icon"
+    href="https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/68095c21001977dae23e/view?project=68007df0002d3c24adaa&mode=admin"
+  />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -26,6 +30,7 @@
       <div class="max-w-4xl mx-auto flex justify-between items-center px-4">
         <!-- Left section: Logos -->
         <div class="flex items-center space-x-4">
+          <!-- CHC Logo -->
           <a
             href="/"
             class="text-xl font-bold text-white flex items-center space-x-2"
@@ -51,16 +56,39 @@
         <!-- Desktop Nav -->
         <ul class="hidden lg:flex space-x-4">
           <li>
-            <a href="/index.html#upcoming-events-header" class="py-2 px-2"
-              >Upcoming Events</a
-            >
+            <a href="/" class="py-2 px-2">Home</a>
           </li>
-          <li><a href="/" class="py-2 px-2">Newsletter</a></li>
+          <!-- <li>
+            <a href="/" class="py-2 px-2">Newsletter</a>
+          </li> -->
           <li><a href="/pages/founders.html" class="py-2 px-2">Founders</a></li>
+
           <li><a href="/pages/contact.html" class="py-2 px-2">Contact</a></li>
         </ul>
       </div>
+
+      <!-- Mobile Nav -->
+      <div
+        id="mobile-nav"
+        class="hidden lg:hidden bg-gray-900 text-white text-center"
+      >
+        <a href="/" class="block py-2">Home</a>
+        <!-- <a href="/" class="block py-2">Newsletter</a> -->
+        <a href="/pages/founders.html" class="block py-2">Founders</a>
+
+        <a href="/pages/contact.html" class="block py-2">Contact</a>
+      </div>
     </nav>
+
+    <div
+      class="text-center w-full bg-gray-100 max-w-4xl mx-auto px-4 py-8 lg:px-8"
+    >
+      <img
+        src="https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/680958d80017cee7ca28/view?project=68007df0002d3c24adaa&mode=admin"
+        alt="Logo"
+        class="h-64 mx-auto"
+      />
+    </div>
 
     <!-- Contact / Socials Section -->
     <section class="max-w-4xl mx-auto text-center bg-gray-100 px-4 py-8 lg:px-8">
