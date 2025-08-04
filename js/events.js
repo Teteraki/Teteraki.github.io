@@ -3,6 +3,18 @@ import { createEventTiles } from "/js/event-tile-factory.js";
 const upcoming_events = [
   {
     image:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/6890fa730036e39b5762/view?project=68007df0002d3c24adaa&mode=admin",
+    name: "Heat Check by CHC - August 30th @ Bow Valley Esports Arena",
+    url: "https://start.gg/heatcheck",
+  },
+  {
+    image:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/68095e350011c9304ae2/view?project=68007df0002d3c24adaa&mode=admin",
+    name: "MRU Smash - Weekly Tuesday's @ 6:30 PM (Ran by MRU Smash Club)",
+    url: "https://start.gg/mrusmash",
+  },
+  {
+    image:
       "https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/68007f6700275c33cb49/view?project=68007df0002d3c24adaa&mode=admin",
     name: "Alberta Melee Mountain Climb - Biweekly Netplay Sunday's @ 7PM GMT",
     url: "https://start.gg/abmc",
@@ -12,12 +24,6 @@ const upcoming_events = [
       "https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/68095d640011d92672e8/view?project=68007df0002d3c24adaa&mode=admin",
     name: "Black Tie Basement - Biweekly Friday's @ 6PM GMT",
     url: "https://start.gg/btb",
-  },
-  {
-    image:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/68007f440024defdd52f/files/68095e350011c9304ae2/view?project=68007df0002d3c24adaa&mode=admin",
-    name: "MRU Smash - Weekly Tuesday's @6:30 PM (Ran by MRU Smash Club)",
-    url: "https://start.gg/mrusmash",
   },
 
   // Add more events as needed
